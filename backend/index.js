@@ -1,5 +1,6 @@
+// index.js
 import express from 'express';
-import { handler } from './build/handler.js';
+import { handler } from '../client/build/handler.js';
 import bodyParser from 'body-parser';
 
 const app = express();
@@ -23,6 +24,7 @@ app.get('/api/groceries', (req, res) => {
   return res.json({ groceries, text });
 });
 
+// Keep this handler middleware at the end
 // Use SvelteKit handler for everything else
 app.use(handler);
 
