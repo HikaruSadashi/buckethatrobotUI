@@ -1,7 +1,10 @@
 #!/bin/bash
 
+sleep 2
+
 # Server URL
 SERVER_URL="http://localhost:5173"
+# SERVER_URL="https://buckethatrobot.onrender.com/"
 
 # Update Message
 echo "Sending POST request to /update-message..."
