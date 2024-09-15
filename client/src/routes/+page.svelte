@@ -5,7 +5,7 @@
     let text = "";
   
     // Base URL for your backend
-    const apiBaseUrl = "https://buckethatrobot.onrender.com/:3000"; // site change for deploy
+    const apiBaseUrl = "https://buckethatrobot.onrender.com/"; // site change for deploy
   
     // Fetch updated data from the backend server
     const updateData = async () => {
